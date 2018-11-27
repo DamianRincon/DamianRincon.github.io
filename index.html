@@ -1,312 +1,330 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta name="description" content="Damián Rincón Cañaveral, Desarrollador de Software Freelance, Movíl Android, Web, MySQL, NOSQL (MongoDB), Firebase.">
-    <meta name="author" content="Damián Rincón Cañaveral" />	
-    <link rel="shortcut icon" href="https://exploraocosingo.com/images/icon.png">
-	<title>Damián Rincón Cañaveral</title>
-	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-	<link href='https://fonts.googleapis.com/css?family=Product+Sans' rel='stylesheet' type='text/css'>
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
-	<link href="https://unpkg.com/ionicons@4.2.2/dist/css/ionicons.min.css" rel="stylesheet">
-	<style type="text/css" media="screen">
-		* {font-family: Product Sans;}
-		.center-text{text-align: center !important;}
-		header, main, footer { padding-left: 300px; }
-		.toolbar_list{margin-left: 300px !important;}
-		.img-margin{margin-left: 30% !important;}
-		.social_txt{margin-left: 35% !important;}
-    	@media only screen and (max-width : 992px) { header, main, footer { padding-left: 0;	} .img-margin{margin-left:20% !important;}
-    	.social_txt{margin-left:0% !important;} .toolbar_list{margin-left: 0 !important;} }
-    	body {
-    		display: flex;
-    		min-height: 100vh;
-    		flex-direction: column;
-  		}
-  		main {
-  			flex: 1 0 auto;
-  		}
-	</style>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Damián Rincón Cañaveral, Desarrollador de Software Freelance, Movíl Android, Web, MySQL, NOSQL (MongoDB), Firebase.">
+  <meta name="author" content="Damián Rincón Cañaveral" />  
+  <link rel="shortcut icon" href="https://exploraocosingo.com/images/icon.png">
+  <title>Damián Rincón Cañaveral</title>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href='https://fonts.googleapis.com/css?family=Product+Sans' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
+  <link href="https://unpkg.com/ionicons@4.2.2/dist/css/ionicons.min.css" rel="stylesheet">
+  <style type="text/css" media="screen">
+    * {font-family: Product Sans;}
+    .modal-custom { width: 35% !important ; height: 75% !important ;}
+    .drc-text{ color: #e51c23 !important;}
+    .drc{background-color: #e51c23 !important;}
+    .img-logo{width: 15%}
+    .center-text{text-align: center !important;}
+    .link>a{color: #607d8b !important;}
+    .link:hover>a{background-color: #FFFFFF;color: #e51c23 !important;}
+    .tab>a{color: #607d8b !important;}
+    .tab:hover>a{background-color: rgba(0,0,0,0.2);color: #e51c23 !important;}
+    li>.active{background-color:#FFFFFF !important;color: rgba(229,28,35,1) !important;}
+    .img-margin{margin-left: 25% !important;margin-top: -90px !important; position: fixed;}
+    .custom>p{ padding-top: 10px;}
+    #yo{width: 200px;}
+    @media only screen and (max-width : 992px) {
+      .modal-custom { width: 95% !important ; height: 95% !important ;}
+      .container{ width: 100% !important;}
+      .img-logo{width: 15% !important; margin-left: 35% !important;}
+      .img-margin{margin-left: 28% !important; margin-top: 5px !important; position: fixed;}
+      #yo{width: 120px;}
+    }
+  </style>
 </head>
 <body>
-	<header>
-  		<nav class="nav-extended" style="background-color: #1abc9c !important;">
-  			<a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-    		<div class="nav-wrapper">
-      			<a href="#!" class="hide-on-med-and-down brand-logo">&nbsp; &nbsp;Damián Rincon</a>
-      			<ul class="right hide-on-med-and-down">
-        			<li><a></a></li>
-      			</ul>
-    		</div>
-    		<div class="nav-content">
-      			<span class="nav-title">&nbsp; &nbsp;</span>
-    		</div>
-  		</nav>
-  		<ul id="mobile-demo" class="sidenav sidenav-fixed">
-    		<li>
-    			<div class="user-view">
-      				<div class="background">
-        				<img src="http://www.img.lirent.net/2014/10/Android-Lollipop-Material-Design-Wallpaper-6.png" width="100%" height="100%">
-      				</div>
-      				<a href="#user"><img class="circle" src="https://avatars1.githubusercontent.com/u/31808361?s=460&v=4"></a>
-      				<a href="#name"><span class="white-text name">Damián Rincón Cañaveral</span></a>
-      				<a href="#email"><span class="white-text email">damianrincondrc@gmail.com</span></a>
-    			</div>
-    		</li>
-    		<li><a class="modal-trigger" href="#contacto"><i class="material-icons">mail</i>Contactame</a></li>
-    		<li><a class="dropdown-trigger" data-target='dropdown1' href="#!"><i class="material-icons">thumb_up</i>Sigueme</a></li>
-    		<li><div class="divider"></div></li>
-    		<li><a class="subheader">Mis Aplicaciones</a></li>
-    		<li><a class="waves-effect" href="https://drive.google.com/open?id=1RXrJasneN4J0hQyG1B91p9pu7MwiwQzf"><i class="material-icons">android</i>Material Color Palette</a></li>
-    		<li><a class="waves-effect" href="https://drive.google.com/open?id=1w7ZCDbhDKQ_4qw9CRZzuEvzPEpZIxxDY"><i class="material-icons">android</i>PaintTo</a></li>
-    		<li><a class="waves-effect" onclick="M.toast({html: 'Esta aplicación se encuentra en mi repositorio de GitHub'})"><i class="material-icons">android</i>ComandArduino</a></li>
-    		<li><a class="waves-effect" onclick="M.toast({html: 'Esta aplicación se encuentra en mi repositorio de GitHub'})"><i class="material-icons">android</i>EssentialMovies</a></li>
-    		<li><a class="waves-effect" href="https://drive.google.com/open?id=1QiuGqLNvA_-LZHSLK8A4uLALZeDh7XIj" onclick="M.toast({html: 'Esta aplicación se encuentra en face pruebas aun no esta terminada...'})"><i class="material-icons">android</i>Explora Ocosingo</a></li>
-    		<li><a class="waves-effect" href="https://exploraocosingo.com"><i class="material-icons">web</i>Explora Ocosingo</a></li>
-    		<li><a class="waves-effect" href="https://financieracapp.com.mx/"><i class="material-icons">web</i>CAPP</a></li>
-  		</ul>  
-	</header><!-- /header -->
-	<main>
-		<div class="card" style="margin-left: 20px; margin-right: 20px;">
-			<div class="img-margin" style="margin-top: -90px !important; position: fixed;">
-				<img id="yo" class="scale-transition scale-out circle" src="https://avatars1.githubusercontent.com/u/31808361?s=460&v=4" width="200px">
-			</div>
-			<div class="row">
-				<div class="col s12 l12" style="margin-top: 100px;">
-					<div>
-        				<div class="card-content center-text" id="card_title">
-          					<span class="card-title">Damián Rincón.</span>
-          					<p>Tecnico Superior Universitario en Sistemas informaticos</p>
-          					<div class="divider"></div>
-        				</div>
-      				</div>
-    			</div>
-  			</div>
-  			<ul class="collapsible popout">
-  				<li class="active">
-  					<div class="collapsible-header"><i class="material-icons">school</i>Formación Academica.</div>
-      				<div class="collapsible-body">
-      					<p>&deg; Universidad Tecnológica de la Selva (UTS) Ocosingo Chiapas, Técnico Superior Universitario en Sistemas informáticos. (2015-2017).</p>
-	          			<p>&deg; Colegio de Estudios Científicos y Tecnológicos del Estado de Chiapas (CECyTECH) Col. Ricardo Flórez Magón Mpio. Venustiano Carranza Chiapas, Área de Soporte y Mantenimiento de hardware y software. (2012-2015).</p>
-	          			<p>&deg; Escuela Secundaria Técnica N° 35 José Vasconcelos, Las Jarretaderas Nayarit, (2008-2011).</p>
-      				</div>
-    			</li>
-    			<li>
-      				<div class="collapsible-header"><i class="material-icons">class</i>Preparación</div>
-      				<div class="collapsible-body">
-      					<p>&deg; Participación: Torneos regionales, nacionales e internacionales en Vex Robotic’s, 3 Años.</p>
-      					<p>&deg; Participación: Concurso Regional de Creatividad e Innovación Tecnológica para alumnos y docentes 2014.</p>
-      					<p>&deg; Participación: Desarrollo del sistema “System Chess”, para la fábrica de quesos Santa Rosa (Ocosingo, Chiapas), 4 Meses.</p>
-      					<p>&deg; Constancia de capacitación acelerada especifica en sistemas web, 20 horas.</p>
-      					<p>&deg; Participación: Desarrollo del Proyecto “SEVADE”, Sistema de Entorno Virtual de Aprendizaje Dirigido a la Evaluación (Universidad Tecnológica de la Selva, Ocosingo, Chiapas), 4 Meses.</p>
-      					<p>&deg; Clases: Programación Orientada a Objetos Java, 6 Meses.</p>
-      					<p>&deg; Clases: Programación Orientada a Objetos PHP, 6 Meses.</p>
-      					<p>&deg; Clases: Manipulación de bases de datos SQL (MySQL).</p>
-      					<p>&deg; Taller: Programación en Arduino, 15 Horas.</p>
-      					<p>&deg; Taller: Mantenimiento Preventivo y Correctivos de Equipos de Cómputo.</p>
-      					<p>&deg; Curso: Creación y Manipulación de base de datos NoSQL con MongoDB, Java y PHP Orientado a Objetos. 15 Horas.</p>
-      					<p>&deg; Curso: Programación Android, 8 Meses.</p>
-      					<p>&deg; Curso: Uso de Framework para el desarrollo web Font-End y Back-End utilizando JQuery, Uikit, Materialize, Bootstrap, Material Design Lite, Ajax y JavaScript, 5 Meses.</p>
-      					<p>&deg; Prácticas profesionales desarrollando software empresarial, así como su página web en financiera CAPP (Consultores Asociados en Producción Pecuaria), 4 Meses.</p>
-      					<p>&deg; Curso de manipulación e utilización de software para el comercio electronico (PrestaShop), 1 Mes.</p>
-      					<p>&deg; Programación de robots para el taller de Electrónica y Robótica de la Universidad Tecnológica de la Selva.</p>
-      					<p>&deg; Participación en el desarrollo de software para el ayuntamiento municipal de Ocosingo, Chiapas en el proyecto de "Explora Ocosingo",7 Meses.</p>
-      				</div>
-    			</li>
-    			<li>
-      				<div class="collapsible-header"><i class="material-icons">fitness_center</i>Aptitudes</div>
-      				<div class="collapsible-body">
-      					<p>&deg; Autodidacta.</p>
-      					<p>&deg; Responsable.</p>
-      					<p>&deg; Ambicioso.</p>
-      					<p>&deg; Contemporáneo.</p>
-      					<p>&deg; Sincero.</p>
-      					<p>&deg; Liderazgo.</p>
-      					<p>&deg; Manejo de grupos.</p>
-      					<p>&deg; Capacidad de anális.</p>
-      					<p>&deg; Innovación y  nuevas tecnologías.</p>
-      					<p>&deg; Proactivo.</p>
-      					<p>&deg; Ganas de crecer.</p>
-      				</div>
-    			</li>
-    			<li>
-      				<div class="collapsible-header"><i class="material-icons">accessibility</i>Habilidades</div>
-      				<div class="collapsible-body">
-      					<p>&deg; Uso avanzado de Microsoft Office.</p>
-      					<p>&deg; Manejo de base de datos relacionales en MySQL.</p>
-      					<p>&deg; Manejo de base de datos no relacionales NoSQL con MongoDB.</p>
-      					<p>&deg; Manejo de controlador de versiones con GitHub.</p>
-      					<p>&deg; Manejo de metodología de desarrollo SCRUM.</p>
-      					<p>&deg; Experiencia como Freelance.</p>
-      					<p>&deg; Manejo de sistema operativo Linux.</p>
-      					<p>&deg; Utilización de android Sdk Api 19 y superiores.</p>
-      					<p>&deg; Creación y Mantenimiento de aplicaciones.</p>
-      					<p>&deg; Creación de interfaces UI.</p>
-      					<p>&deg; Manejo de SQLite.</p>
-      					<p>&deg; Programación Java - SDK Android.</p>
-      					<p>&deg; Desarrollador Full Stack en Android y Web.</p>
-      					<p>&deg; Manejo, utilización y consumo de JSON.</p>
-      					<p>&deg; Manejo e implementación de notificaciones Push con Firebase en Android.</p>
-      					<p>&deg; Manejo de base de datos en tiempo real con Firebase en Android.</p>
-      					<p>&deg; Manejo de fragment.</p>
-      					<p>&deg; Manejo e utilización de animaciones y transiciones.</p>
-      					<p>&deg; Manejor y consumo de recursos Rest.</p>
-      					<p>&deg; Uso e implementación de Android Material Design 1 y Material Design 2.</p>
-      					<p>&deg; Consumo de APIS de Google Maps, Google Places (Android & Web).</p>
-      					<p>&deg; Manejo de Geolocalización, mapas y rutas.</p>
-      					<p>&deg; Manejo de Threads-Hilos en segundo plano (Android).</p>
-      					<p>&deg; Conocimientos de consola Google Play para publicar aplicaciones.</p>
-      					<p>&deg; Uso del hardware del teléfono (cámara, acelerómetro, geo localización).</p>
-      					<p>&deg; Responsive Web Design.</p>
-      					<p>&deg; Administración del hardware del dispositivo.</p>      					
-      				</div>
-    			</li>
-    			<li>
-      				<div class="collapsible-header"><i class="material-icons">directions_bike</i>Pasatiempos</div>
-      				<div class="collapsible-body">
-      					<p>&deg; Escuchar música.</p>
-      					<p>&deg; Leer.</p>
-      					<p>&deg; Jugar video juegos.</p>
-      					<p>&deg; Ver videos.</p>
-      					<p>&deg; Salir a caminar.</p>
-      				</div>
-      			</li>
-      			<li>
-      				<div class="collapsible-header"><i class="material-icons">info</i>Información adicional</div>
-      				<div class="collapsible-body">
-      					<p>&deg; Posibilidad de cambio de residencia.</p>
-      					<p>&deg; Incorporación inmediata al trabajo.</p>
-      					<p>&deg; Acoplamiento al trabajo en equipo.</p>
-      					<p>&deg; Posibilidad de trabajar en línea.</p>
-      					<p>&deg; A punto de concluir los estudios universitarios.</p>
-      					<p>&deg; En un relación.</p>
-      					<p>&deg; Nivel de inglés básico.</p>
-      				</div>
-      			</li>
-  			</ul>
-		</div>
-		<div class="fixed-action-btn toolbar direction-top" style="transition: transform 0.2s ease 0s; transform: translate3d(0px, 0px, 0px);">
-			<a id="menu_fab" class="btn-floating btn-large" style="background-color: #1abc9c !important; transition: transform 0.2s cubic-bezier(0.55, 0.055, 0.675, 0.19) 0s; transform: translate3d(0px, 0px, 0px);">
-				<i class="large material-icons">insert_comment</i>
-      		</a>
-      		<ul class="toolbar_list" style="background-color: #1abc9c !important;">
-        		<li class="waves-effect waves-light tooltipped" data-position="top" data-tooltip="WhatsApp"><a href="https://wa.me/529611733525"><i class="small icon ion-logo-whatsapp"></i></a></li>
-        		<li class="waves-effect waves-light tooltipped" data-position="top"  data-tooltip="Facebook"><a href="https://www.facebook.com/demianrincondrc"><i class="small icon ion-logo-facebook"></i></a></li>
-        		<li class="waves-effect waves-light tooltipped" data-position="top"  data-tooltip="Instagram"><a href="https://www.instagram.com/demianrc/"><i class="small icon ion-logo-instagram"></i></a></li>
-        		<li class="waves-effect waves-light tooltipped" data-position="top"  data-tooltip="Correo"><a href="mailto:damianrincondrc@gmail.com"><i class="small icon ion-md-mail"></i></a></li>
-        		<li class="waves-effect waves-light tooltipped" data-position="top"  data-tooltip="Skype"><a href="https://join.skype.com/invite/GadPVINI5WYD"><i class="small icon ion-logo-skype"></i></a></li>
-        		<li class="waves-effect waves-light tooltipped" data-position="top"  data-tooltip="Youtube"><a href="https://www.youtube.com/channel/UCiv3Sc-qSq2HThd5pLuTo2w"><i class="small icon ion-logo-youtube"></i></a></li>
-      		</ul>
-    	</div>
-		<div class="tap-target" style="background-color: #1abc9c !important;" data-target="menu_fab">
-			<div class="tap-target-content white-text">
-            	<h5>!Hey Hola¡</h5>
-            	<p class="white-text">Puedes seguirme o contactarme a traves de mis redes sociales, las cuales estan aqui, solo da clic para ver las opciones.</p>
-          	</div>
-        </div>
-        <ul id='dropdown1' class='dropdown-content'>
-        	<li class="disable"><a href="#!"><i class="small material-icons">arrow_back</i>Sigueme</a></li>
-    		<li><a href="https://www.facebook.com/demianrincondrc"><i class="small icon ion-logo-facebook"></i>Facebook</a></li>
-    		<li><a href="https://www.instagram.com/demianrc/"><i class="small icon ion-logo-instagram"></i>Instagram</a></li>
-    		<li><a href="https://www.youtube.com/channel/UCiv3Sc-qSq2HThd5pLuTo2w"><i class="small icon ion-logo-youtube"></i>Youtube</a></li>
-  		</ul>
-        <div id="contacto" class="modal bottom-sheet">
-            <div class="modal-content container uk-modal-full">
-            	<h5>Contactame</h5>
-                <p>Me pondre en contacto, lo más pronto posible.</p>
-                <div class="row">
-                    <form id="form_contact">
-                        <div class="col l12">
-                            <div class="input-field col l6 s12">
-                              	<i class="material-icons prefix">account_circle</i>
-          						<input id="nombre" name="nombre" type="text" class="validate" required>
-          						<label for="nombre">Nombre Completo</label>
-        					</div>
-                            <div class="input-field col l6 s12">
-                               	<i class="material-icons prefix">email</i>
-            					<input id="email" name="email" type="email" class="validate" required>
-            					<label for="email">Email</label>
-            					<span class="helper-text" data-error="Ingrese un correo electronico valido" data-success="Valido!"></span>
-          					</div>
-                        </div>
-                        <div class="input-field col l12 s12">
-          					<i class="material-icons prefix">mode_edit</i>
-          					<textarea id="content" name="content" class="materialize-textarea"></textarea>
-          					<label for="content">Su mensaje...</label>
-        				</div>
-                        <div class="row">
-                            <div class="offset-l7 col l2 s12">
-                                <a class="waves-effect waves-light btn modal-close grey">Cancelar</a>
-                            </div>
-                            <div class="col l2 s12">
-                               	<button id="sendMessage" class="btn waves-effect waves-light teal" type="submit" name="action">Enviar
-    								<i class="material-icons right">send</i>
-  								</button>
-                            </div>
-                        </div>
-                   	</form>
+  <header id="header">
+    <nav class="nav-extended white">
+      <div class="nav-wrapper">
+        <a href="#" class="brand-logo blue-grey-text"><img class="img-logo" src="https://exploraocosingo.com/images/icon.png"></a>
+        <a href="#" data-target="menu_left" class="sidenav-trigger"><i class="material-icons blue-grey-text">menu</i></a>
+        <ul id="nav-mobile" class="right hide-on-med-and-down">
+          <li class="link"><a class="modal-trigger" href="#modal_redes">Redes Sociales</a></li>
+          <li class="link"><a onclick="M.toast({html: 'Función aun no disponible'})" href="#">Descargar CV</a></li>
+          <li class="link"><a class="dropdown-trigger" href="#!" data-target="dropdown1">Aplicaciones<i class="material-icons right">arrow_drop_down</i></a></li>
+          <!--<li class="link"><a href="portafolio/">Portafolio</a></li>-->
+        </ul>
+        <ul id="dropdown1" class="dropdown-content">
+          <li class="link"><a class="waves-effect apps modal-trigger" href="#modal_apps" tag="0"><i class="material-icons">android</i>Material Color Palette</a></li>
+          <li class="link"><a class="waves-effect apps modal-trigger" href="#modal_apps" tag="1"><i class="material-icons">android</i>The Essential Movies</a></li>
+          <li class="link"><a class="waves-effect apps modal-trigger" href="#modal_apps" tag="2"><i class="material-icons">android</i>Soluciones Quimicas</a></li>
+          <li class="link"><a class="waves-effect apps modal-trigger" href="#modal_apps" tag="3"><i class="material-icons">android</i>PainTo</a></li>
+          <li class="link"><a class="waves-effect apps modal-trigger" href="#modal_apps" tag="4"><i class="material-icons">android</i>Explora Ocosingo</a></li>
+          <li class="divider"></li>
+          <li class="link"><a class="waves-effect apps modal-trigger" href="#modal_apps" tag="5"><i class="material-icons">web</i>Explora Ocosingo</a></li>
+          <li class="link"><a class="waves-effect apps modal-trigger" href="#modal_apps" tag="6"><i class="material-icons">web</i>Financiera CAPP</a></li>
+        </ul>
+      </div>
+      <div class="nav-content">
+        <ul class="tabs tabs-transparent">
+          <li class="tab"><a class="active" href="#test1"><i class="material-icons">school</i></a></li>
+          <li class="tab"><a href="#test2"><i class="material-icons">class</i></a></li>
+          <li class="tab"><a href="#test3"><i class="material-icons">fitness_center</i></a></li>
+          <li class="tab"><a href="#test4"><i class="material-icons">accessibility</i></a></li>
+          <li class="tab"><a href="#test5"><i class="material-icons">info</i></a></li>
+        </ul>
+        <a class="btn-floating btn-large hide-on-med-and-down halfway-fab waves-effect waves-light drc tooltipped" data-position="left" data-tooltip="Enviar email"  href="mailto:damianrincondrc@gmail.com">
+          <i class="material-icons">insert_comment</i>
+        </a>
+      </div>
+      <ul id="menu_left" class="sidenav">
+        <li>
+          <div class="user-view">
+            <div class="background" style="background-color: #36474e"></div>
+            <a href="#user"><img class="circle" src="https://avatars1.githubusercontent.com/u/31808361?s=460&v=4"></a>
+            <a href="#name"><span class="white-text name">Damián Rincón Cañaveral</span></a>
+            <a href="#email"><span class="white-text email">damianrincondrc@gmail.com</span></a>
+          </div>
+        </li>
+
+        <li><a class="sidenav-close modal-trigger" href="#modal_redes"><i class="material-icons">thumb_up</i>Redes Sociales</a></li>
+        <li><a href="#!" onclick="M.toast({html: 'Función aun no disponible'})" class="sidenav-close"><i class="material-icons">arrow_downward</i>Descargar CV</a></li>
+        <!--<li><a href="portafolio/" class="sidenav-close"><i class="material-icons">apps</i>Portafolio</a></li>-->
+        <li><div class="divider"></div></li>
+        <li><a class="subheader">Mis aplicaciones</a></li>
+        <li><a class="sidenav-close waves-effect apps modal-trigger" href="#modal_apps" tag="0"><i class="material-icons">android</i>Material Color Palette</a></li>
+        <li><a class="sidenav-close waves-effect apps modal-trigger" href="#modal_apps" tag="1"><i class="material-icons">android</i>The Essential Movies</a></li>
+        <li><a class="sidenav-close waves-effect apps modal-trigger" href="#modal_apps" tag="2"><i class="material-icons">android</i>Soluciones Quimicas</a></li>
+        <li><a class="sidenav-close waves-effect apps modal-trigger" href="#modal_apps" tag="3"><i class="material-icons">android</i>PainTo</a></li>
+        <li><a class="sidenav-close waves-effect apps modal-trigger" href="#modal_apps" tag="4"><i class="material-icons">android</i>Explora Ocosingo</a></li>
+        <li><a class="sidenav-close waves-effect apps modal-trigger" href="#modal_apps" tag="5"><i class="material-icons">web</i>Explora Ocosingo</a></li>
+        <li><a class="sidenav-close waves-effect apps modal-trigger" href="#modal_apps" tag="6"><i class="material-icons">web</i>Financiera CAPP</a></li>
+      </ul>
+    </nav>
+  </header><!-- /header -->
+  <main class="container">
+    <div class="card" style="margin-left: 20px; margin-right: 20px;">
+      <div class="img-margin">
+        <img id="yo" class="scale-transition scale-out circle" src="https://avatars1.githubusercontent.com/u/31808361?s=460&v=4">
+      </div>
+      <div class="row">
+          <div class="col s12 l12" style="margin-top: 100px;">
+            <div>
+              <div class="card-content center-text" id="card_title">
+                <span class="card-title">Damián Rincón.</span>
+                <p>Técnico Superior Universitario en Sistemas informaticos</p>
+                <div class="divider"></div>
+              </div>
+              <div id="test1" class="col s12">
+                <div class="card-content">
+                  <span class="card-title"><i class="material-icons left drc-text">school</i> Formación academiaca</span>
+                  <div class="custom">
+                    <p>&deg; Universidad Tecnológica de la Selva (UTS) Ocosingo Chiapas, Técnico Superior Universitario en Sistemas informáticos. (2015-2017).</p>
+
+                    <p>&deg; Colegio de Estudios Científicos y Tecnológicos del Estado de Chiapas (CECyTECH) Col. Ricardo Flórez Magón Mpio. Venustiano Carranza Chiapas, Área de Soporte y Mantenimiento de hardware y software. (2012-2015).</p>
+
+                    <p>&deg; Escuela Secundaria Técnica N° 35 José Vasconcelos, Las Jarretaderas Nayarit, (2008-2011).</p>
+                  </div>
                 </div>
-            </div>
-        </div><!-- /Modal Contacto -->
-	</main><!-- /main -->
-	<footer class="page-footer" style="background-color:#34495e !important;">
-          <div class="container">
-            <div class="row">
+              </div>
+
+              <div id="test2" class="col s12">
+                <div class="card-content">
+                  <span class="card-title"><i class="material-icons left drc-text">class</i> Preparación</span>
+                  <div class="custom">
+                    <p>&deg; Participación: Torneos regionales, nacionales e internacionales en Vex Robotic’s, 3 Años.</p>
+                    <p>&deg; Participación: Concurso Regional de Creatividad e Innovación Tecnológica para alumnos y docentes 2014.</p>
+                    <p>&deg; Participación: Desarrollo del sistema “System Chess”, para la fábrica de quesos Santa Rosa (Ocosingo, Chiapas), 4 Meses.</p>
+                    <p>&deg; Constancia de capacitación acelerada especifica en sistemas web, 20 horas.</p>
+                    <p>&deg; Participación: Desarrollo del Proyecto “SEVADE”, Sistema de Entorno Virtual de Aprendizaje Dirigido a la Evaluación (Universidad Tecnológica de la Selva, Ocosingo, Chiapas), 4 Meses.</p>
+                    <p>&deg; Clases: Programación Orientada a Objetos Java, 6 Meses.</p>
+                    <p>&deg; Clases: Programación Orientada a Objetos PHP, 6 Meses.</p>
+                    <p>&deg; Clases: Manipulación de bases de datos SQL (MySQL).</p>
+                    <p>&deg; Taller: Programación en Arduino, 15 Horas.</p>
+                    <p>&deg; Taller: Mantenimiento Preventivo y Correctivos de Equipos de Cómputo.</p>
+                    <p>&deg; Curso: Creación y Manipulación de base de datos NoSQL con MongoDB, Java y PHP Orientado a Objetos. 15 Horas.</p>
+                    <p>&deg; Curso: Programación Android, 8 Meses.</p>
+                    <p>&deg; Curso: Uso de Framework para el desarrollo web Font-End y Back-End utilizando JQuery, Uikit, Materialize, Bootstrap, Material Design Lite, Ajax y JavaScript, 5 Meses.</p>
+                    <p>&deg; Prácticas profesionales desarrollando software empresarial, así como su página web en financiera CAPP (Consultores Asociados en Producción Pecuaria), 4 Meses.</p>
+                    <p>&deg; Curso de manipulación e utilización de software para el comercio electronico (PrestaShop), 1 Mes.</p>
+                    <p>&deg; Programación de robots para el taller de Electrónica y Robótica de la Universidad Tecnológica de la Selva.</p>
+                    <p>&deg; Participación en el desarrollo de software para el ayuntamiento municipal de Ocosingo, Chiapas en el proyecto de "Explora Ocosingo",7 Meses.</p>
+                  </div>
+                </div>
+              </div>
+
+              <div id="test3" class="col s12">
+                <div class="card-content">
+                  <span class="card-title"><i class="material-icons left drc-text">fitness_center</i> Aptitudes</span>
+                  <div class="custom">
+                    <p>&deg; Autodidacta.</p>
+                    <p>&deg; Responsable.</p>
+                    <p>&deg; Ambicioso.</p>
+                    <p>&deg; Contemporáneo.</p>
+                    <p>&deg; Sincero.</p>
+                    <p>&deg; Liderazgo.</p>
+                    <p>&deg; Manejo de grupos.</p>
+                    <p>&deg; Capacidad de anális.</p>
+                    <p>&deg; Innovación y  nuevas tecnologías.</p>
+                    <p>&deg; Proactivo.</p>
+                    <p>&deg; Ganas de crecer.</p>
+                  </div>
+                </div>
+              </div>
+
+              <div id="test4" class="col s12">
+                <div class="card-content">
+                  <span class="card-title"><i class="material-icons left drc-text">accessibility</i> Habilidades</span>
+                  <div class="custom">
+                    <p>&deg; Uso avanzado de Microsoft Office.</p>
+                    <p>&deg; Manejo de base de datos relacionales en MySQL.</p>
+                    <p>&deg; Manejo de base de datos no relacionales NoSQL con MongoDB.</p>
+                    <p>&deg; Manejo de controlador de versiones con GitHub.</p>
+                    <p>&deg; Manejo de metodología de desarrollo SCRUM.</p>
+                    <p>&deg; Experiencia como Freelance.</p>
+                    <p>&deg; Manejo de sistema operativo Linux.</p>
+                    <p>&deg; Utilización de android Sdk Api 19 y superiores.</p>
+                    <p>&deg; Creación y Mantenimiento de aplicaciones.</p>
+                    <p>&deg; Creación de interfaces UI.</p>
+                    <p>&deg; Manejo de SQLite.</p>
+                    <p>&deg; Programación Java - SDK Android.</p>
+                    <p>&deg; Desarrollador Full Stack en Android y Web.</p>
+                    <p>&deg; Manejo, utilización y consumo de JSON.</p>
+                    <p>&deg; Manejo e implementación de notificaciones Push con Firebase en Android.</p>
+                    <p>&deg; Manejo de base de datos en tiempo real con Firebase en Android.</p>
+                    <p>&deg; Manejo de fragment.</p>
+                    <p>&deg; Manejo e utilización de animaciones y transiciones.</p>
+                    <p>&deg; Manejor y consumo de recursos Rest.</p>
+                    <p>&deg; Uso e implementación de Android Material Design 1 y Material Design 2.</p>
+                    <p>&deg; Consumo de APIS de Google Maps, Google Places (Android & Web).</p>
+                    <p>&deg; Manejo de Geolocalización, mapas y rutas.</p>
+                    <p>&deg; Manejo de Threads-Hilos en segundo plano (Android).</p>
+                    <p>&deg; Conocimientos de consola Google Play para publicar aplicaciones.</p>
+                    <p>&deg; Uso del hardware del teléfono (cámara, acelerómetro, geo localización).</p>
+                    <p>&deg; Responsive Web Design.</p>
+                  </div>
+                </div>
+              </div>
+
+              <div id="test5" class="col s12">
+                <div class="card-content">
+                  <span class="card-title"><i class="material-icons left drc-text">info</i> Información adicional</span>
+                  <span>Pasatiempos</span>
+                  <div class="custom">
+                    <p>&deg; Escuchar música.</p>
+                    <p>&deg; Leer.</p>
+                    <p>&deg; Jugar video juegos.</p>
+                    <p>&deg; Redes sociales.</p>
+                  </div>
+                  <br>
+                  <div class="divider"></div>
+                  <span>Más sobre mi</span>
+                  <div class="custom">
+                    <p>&deg; Posibilidad de cambio de residencia.</p>
+                    <p>&deg; Acoplamiento al trabajo en equipo.</p>
+                    <p>&deg; Posibilidad de trabajar en línea.</p>
+                    <p>&deg; A punto de concluir los estudios universitarios.</p>
+                    <p>&deg; Nivel de inglés técnico.</p>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
-          <div class="footer-copyright">
-            <div class="container">
-            © 2018 Todos los Derechos Reservados por autor
-            <!--<a class="grey-text text-lighten-4 right" href="#!">More Links</a>-->
-            </div>
-          </div>            
-	</footer><!-- /footer -->
-	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
-    <script>
-    	$(document).ready(function(){
-    		$("#yo").removeClass("scale-out");
-    		$("#yo").addClass("scale-in");
-    		$('.modal').modal();
-    		$('.sidenav').sidenav();
-    		$('.collapsible').collapsible();
-    		$('.tap-target').tapTarget();
-    		$('.tooltipped').tooltip();
-    		 $('.dropdown-trigger').dropdown();
-    		$('.fixed-action-btn').floatingActionButton({ toolbarEnabled: true });
-    		setTimeout(function () { $('.tap-target').tapTarget('open') }, 2500);
-            setTimeout(function () { $('.tap-target').tapTarget('close'); }, 8000);
-    		var change= false;
-    		$(window).scroll(function(){
-    			window_y = $(window).scrollTop();
-    			scroll_critical = parseInt($("#card_title").height());
-    			if (window_y > scroll_critical) {
-    				$("#yo").removeClass("scale-in");
-    				$("#yo").addClass("scale-out");
-    			} else {
-    				$("#yo").removeClass("scale-out");
-    				$("#yo").addClass("scale-in");
-    			}
-			});
-			$("#form_contact").submit(function(event) {
-				event.preventDefault();
-				var toastHTML = '<span>Su mensaje a sido enviado, muchas gracias por ponerse en contacto.</span><button class="btn-flat toast-action" onclick=" M.Toast.dismissAll();">Cerrar</button>';
-						M.toast({html: toastHTML,displayLength: 5000});
-                		$('#contacto').modal('close');
-                		$("#form_contact")[0].reset();
-				$.ajax({
-					url:'https://exploraocosingo.com/backend/Controller.php?event=6',
-					type: 'POST',
-					data: $("#form_contact").serialize(),
-					success: function (response) {
-						console.log(response);
-            		}
-        		});   
-    		});
-  		});
-    </script>
+        </div>
+      </div>
+      <div class="hide-on-large-only fixed-action-btn">
+        <a class="btn-floating btn-large drc waves-effect waves-light tooltipped" data-position="left" data-tooltip="Enviar email" href="mailto:damianrincondrc@gmail.com">
+          <i class="large material-icons">insert_comment</i>
+        </a>
+      </div>
+      <div id="modal_apps" class="modal-custom modal modal-fixed-footer">
+        <div class="modal-content">
+          <center><img id="app_icon" src="" class="circle" width="120px" height="120px"></center>
+          <center><h4 id="app_title">Modal Header</h4></center>
+          <p id="app_content">A bunch of text</p>
+        </div>
+        <div class="modal-footer">
+          <a class="modal-close waves-effect waves-green btn-flat">Cerrar</a>
+          <a id="app_link" target="_blank" href="#" class="waves-effect waves-green materialize-red white-text btn-flat">Visitar</a>
+        </div>
+      </div>
+
+      <!-- Modal Structure -->
+      <div id="modal_redes" class="modal bottom-sheet">
+        <div class="modal-content">
+          <h4>Redes Sociales</h4>
+          <ul class="collection">
+            <li class="collection-item avatar">
+              <i class="circle white-text icon ion-logo-facebook" style="background: #4267b2; font-size: 30px"></i>
+              <span class="title">Facebook</span>
+              <p>@demianrincondrc</p>
+              <a href="https://facebook.com/demianrincondrc" target="_blank" class="secondary-content"><i class="material-icons">call_made</i></a>
+            </li>
+            <li class="collection-item avatar">
+              <i class="circle white-text  purple darken-1 icon ion-logo-instagram" style="font-size: 30px"></i>
+              <span class="title">Instagram</span>
+              <p>@demiarc</p>
+              <a href="https://www.instagram.com/demianrc" target="_blank" class="secondary-content"><i class="material-icons">call_made</i></a>
+            </li>
+            <li class="collection-item avatar">
+              <i class="icon ion-logo-youtube red white-text circle" style="font-size: 30px"></i>
+              <span class="title">Youtube</span>
+              <p>Damián Rincón | Incilius.tech</p>
+              <a href="https://www.youtube.com/channel/UCiv3Sc-qSq2HThd5pLuTo2w" target="_blank" class="secondary-content"><i class="material-icons">call_made</i></a>
+            </li>
+            <li class="collection-item avatar">
+              <i class="teal white-text circle icon ion-logo-whatsapp" style="font-size: 30px"></i>
+              <span class="title">Whatsapp</span>
+              <p>+(52) 961-173-35-25</p>
+              <a href="https://wa.me/529611733525" target="_blank" class="secondary-content"><i class="material-icons">call_made</i></a>
+            </li>
+            <li class="collection-item avatar">
+              <i class="blue white-text circle icon ion-logo-skype" style="font-size: 30px"></i>
+              <span class="title">Skype</span>
+              <p>Live: damianrincondrc_1</p>
+              <a href="https://join.skype.com/invite/FdZMbsh7Shoi" target="_blank" class="secondary-content"><i class="material-icons">call_made</i></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+  </main>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
+  <script>
+    $(document).ready(function(){
+
+      var titles = ["Material Color Palette","The Essential Movies","Soluciones Quimicas","PainTo","Explora Ocosingo","Explora Ocosingo","Financiera Capp"];
+
+      var images = ["resource/icon_mcp.png","resource/icon_em.png","resource/android.png","resource/icon_p.png","resource/icon_eo.png","resource/web.png","resource/web.png"];
+
+      var content = ["Es una aplicación movíl basada en Material Design Color, todos los componentes visuales implementados estan basados en Google Design Guidelines Material Desing 2.","Es una aplicación la cual lista las peliculas y series actuales más sobresalientes, todos el contenido de esta aplicación es parte de MovieDB.","Es una aplicación movíl, la cual cuenta con una tabla periodica, asi mismo realiza un par de pequeñas operaciones.","Esta aplicación es similar a un Paint (el cual todos conocemos de Windows), pero mas sencillo, ya que solo se pueden realizar trazos de diferentes tamaños y colores así como guardar dicho trazo.","Esta aplicación es parte de un sistema encargado de dar a conocer los mas atractivos lugares turisticos de la ciudad de Ocosingo Chiapas.","Esta página web se encarga de dar a conocer los atractivos turisticos de la ciudad de Ocosingo Chiapas, cuenta con una versión movíl y un panel de administración.","En esta empresa desarrolle software empresarial contable, así como la agregación de modulos al sistema, generación de reportes y porsupuesto su página web."];
+
+      var links = ["https://drive.google.com/open?id=1v1PMZkFeoRTbbPw5PrzpSlpAQ4lToUWa","https://drive.google.com/open?id=1lnQxBiQI0GVsS9goRzKAqlFGLeZk9eAU","https://drive.google.com/open?id=11EVXcpyDQjchHwA2atA3XSOg5RybtDbN","https://drive.google.com/open?id=1l96FYYsbh8Y0bNnPuPe_VQTWBn7LX3KA","https://drive.google.com/open?id=1AjOIP3b5UMwlUrmuyER51sEm4Q_dg0XM","https://exploraocosingo.com/","https://financieracapp.com.mx/"];
+
+      $(".apps").click(function(event) {
+        var item = $(this).attr("tag");
+        $("#app_title").html(titles[item]);
+        $("#app_content").html(content[item]);
+        document.getElementById("app_icon").src=images[item];
+        document.getElementById("app_link").href=links[item];
+      });
+      $("#yo").removeClass("scale-out");
+      $("#yo").addClass("scale-in");
+      $('.modal').modal();
+      $('.sidenav').sidenav();
+      $('.tooltipped').tooltip();
+      $('.tabs').tabs();
+      $('.tooltipped').tooltip();
+      $('.dropdown-trigger').dropdown({hover: false,coverTrigger:false,alignment: 'right',constrainWidth:false});
+      $('.fixed-action-btn').floatingActionButton();
+      $('.collapsible').collapsible();
+      $('.modal').modal();
+      $(window).scroll(function(){
+          window_y = $(window).scrollTop();
+          scroll_critical = parseInt($("#card_title").height());
+          if (window_y > scroll_critical) {
+            $("#yo").removeClass("scale-in");
+            $("#yo").addClass("scale-out");
+          } else {
+            $("#yo").removeClass("scale-out");
+            $("#yo").addClass("scale-in");
+          }
+      });
+    });    
+  </script>
 </body>
 </html>
