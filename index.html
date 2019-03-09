@@ -5,8 +5,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Damián Rincón Cañaveral, Desarrollador de Software Freelance, Movíl Android, Web, MySQL, NOSQL (MongoDB), Firebase.">
-  <meta name="author" content="Damián Rincón Cañaveral" />  
-  <link rel="shortcut icon" href="resource/icon.png">
+  <meta name="author" content="Damián Rincón Cañaveral" />
+  <link rel="shortcut icon" href="resource/icon_opt.png">
   <title>Damián Rincón Cañaveral</title>
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link href='https://fonts.googleapis.com/css?family=Product+Sans' rel='stylesheet' type='text/css'>
@@ -27,10 +27,11 @@
     .img-margin{margin-left: 25% !important;margin-top: -90px !important; position: fixed;}
     .custom>p{ padding-top: 10px;}
     #yo{width: 200px;}
+    .card-content{padding-left: 0px !important;padding-right:0px !important;}
     @media only screen and (max-width : 992px) {
       .modal-custom { width: 95% !important ; height: 95% !important ;}
       .container{ width: 100% !important;}
-      .img-logo{width: 15% !important; margin-left: 35% !important;}
+      .img-logo{width:  25% !important; margin-left: 35% !important;margin-top: 5px;}
       .img-margin{margin-left: 28% !important; margin-top: 5px !important; position: fixed;}
       #yo{width: 120px;}
     }
@@ -40,14 +41,14 @@
   <header id="header">
     <nav class="nav-extended white">
       <div class="nav-wrapper">
-        <a href="#" class="brand-logo blue-grey-text"><img class="img-logo" src="resource/icon.png"></a>
+        <a href="#" class="brand-logo blue-grey-text"><img class="img-logo" src="resource/icon_opt.png"></a>
         <a href="#" data-target="menu_left" class="sidenav-trigger"><i class="material-icons blue-grey-text">menu</i></a>
         <ul id="nav-mobile" class="right hide-on-med-and-down">
           <li class="link"><a class="modal-trigger" href="#modal_redes">Redes Sociales</a></li>
           <li class="link"><a onclick="M.toast({html: 'La descarga comenzara en un momento...'})" href="resource/CV_v3.pdf" download="DamiánRincónCV.pdf">Descargar CV</a></li>
           <li class="link"><a class="dropdown-trigger" href="#!" data-target="dropdown1">Aplicaciones<i class="material-icons right">arrow_drop_down</i></a></li>
-          <li class="link"><a class="tooltipped" href="https://github.com/DamianRincon" target="_blank" data-position="left" data-tooltip="Ver repositorios"><i class="icon ion-logo-github"></i></a></li>
-          <!--<li class="link"><a href="portafolio/">Portafolio</a></li>-->
+          <li class="link"><a  href="https://github.com/DamianRincon" target="_blank"><i class="icon ion-logo-github"></i></a></li>
+          <li class="link"><a href="https://www.linkedin.com/in/dami%C3%A1n-rinc%C3%B3n-ca%C3%B1averal-0aa208152" target="_blank"><i class="icon ion-logo-linkedin"></i></a></li>
         </ul>
         <ul id="dropdown1" class="dropdown-content">
           <li class="link"><a class="waves-effect apps modal-trigger" href="#modal_apps" tag="0"><i class="material-icons">android</i>Material Color Palette</a></li>
@@ -62,13 +63,14 @@
       </div>
       <div class="nav-content">
         <ul class="tabs tabs-transparent">
-          <li class="tab"><a class="active" href="#test1"><i class="material-icons">school</i></a></li>
+          <li class="tab"><a class="active" href="#test0"><i class="material-icons">business_center</i></a></li>
+          <li class="tab"><a href="#test1"><i class="material-icons">school</i></a></li>
           <li class="tab"><a href="#test2"><i class="material-icons">class</i></a></li>
           <li class="tab"><a href="#test3"><i class="material-icons">fitness_center</i></a></li>
           <li class="tab"><a href="#test4"><i class="material-icons">accessibility</i></a></li>
           <li class="tab"><a href="#test5"><i class="material-icons">info</i></a></li>
         </ul>
-        <a class="btn-floating btn-large hide-on-med-and-down halfway-fab waves-effect waves-light drc tooltipped" data-position="left" data-tooltip="Enviar email"  href="mailto:damianrincondrc@gmail.com">
+        <a class="btn-floating btn-large hide-on-med-and-down halfway-fab waves-effect waves-light drc"  href="mailto:damianrincondrc@gmail.com">
           <i class="material-icons">insert_comment</i>
         </a>
       </div>
@@ -85,7 +87,8 @@
         <li><a class="sidenav-close modal-trigger" href="#modal_redes"><i class="material-icons">thumb_up</i>Redes Sociales</a></li>
         <li><a onclick="M.toast({html: 'La descarga comenzara en un momento...'})" href="resource/CV_v3.pdf" download="DamiánRincónCV.pdf" class="sidenav-close"><i class="material-icons">arrow_downward</i>Descargar CV</a></li>
         <li><a href="https://github.com/DamianRincon" target="_blank" class="sidenav-close"><i class="icon ion-logo-github"></i>Github</a></li>
-        <!--<li><a href="portafolio/" class="sidenav-close"><i class="material-icons">apps</i>Portafolio</a></li>-->
+        <li><a href="https://www.linkedin.com/in/dami%C3%A1n-rinc%C3%B3n-ca%C3%B1averal-0aa208152" target="_blank" class="sidenav-close"><i class="icon ion-logo-linkedin"></i>Linkedin</a></li>
+        
         <li><div class="divider"></div></li>
         <li><a class="subheader">Mis aplicaciones</a></li>
         <li><a class="sidenav-close waves-effect apps modal-trigger" href="#modal_apps" tag="0"><i class="material-icons">android</i>Material Color Palette</a></li>
@@ -101,25 +104,57 @@
   <main class="container">
     <div class="card" style="margin-left: 20px; margin-right: 20px;">
       <div class="img-margin">
-        <img id="yo" class="scale-transition scale-out circle" src="resource/31808361.jpeg">
+        <img id="yo" class="scale-transition scale-out circle" src="resource/yo.jpeg">
       </div>
       <div class="row">
           <div class="col s12 l12" style="margin-top: 100px;">
             <div>
               <div class="card-content center-text" id="card_title">
-                <span class="card-title">Damián Rincón.</span>
-                <p>Técnico Superior Universitario en Sistemas informaticos</p>
+                <span class="card-title">Damián Rincón Cañaveral</span>
+                <p>Ingeniero en Tecnologías de la información</p>
                 <div class="divider"></div>
               </div>
+
+              <div id="test0" class="col s12">
+                <div class="card-content">
+                  <span class="card-title"><i class="material-icons left drc-text">business_center</i> Experiencia laboral y practicas profesionales.</span>
+                  <div class="custom">
+                    <ul class="collection" style="border-color: #FFFFFF !important;">
+                      <li class="collection-item avatar">
+                        <img src="resource/hyperion.png" alt="hyperion" class="circle" style="width: 70px;height: 70px; border-radius: 0px !important">
+                        <span class="title" style="margin-left: 25px;font-weight: bold;">Hyperion Digital Group</span>
+                        <p style="margin-left: 25px">Desarrollador Web Backend</p>
+                        <p style="margin-left: 25px">Empleo Actual</p>
+                      </li>
+                      <li class="collection-item avatar">
+                        <img src="resource/emprendesys.png" alt="hyperion" class="circle" style="width: 70px;height: 70px; border-radius: 0px !important">
+                        <span class="title" style="margin-left: 25px;font-weight: bold;">Emprendesys</span>
+                        <p style="margin-left: 25px">Desarrollador Web Backend y Móvil Backend</p>
+                        <p style="margin-left: 25px">4 meses de practica</p>
+                      </li>
+
+                      <li class="collection-item avatar">
+                        <img src="resource/capp.png" alt="hyperion" class="circle" style="width: 70px;height: 50px; border-radius: 0px !important">
+                        <span class="title" style="margin-left: 25px;font-weight: bold;">Financiera CAPP</span>
+                        <p style="margin-left: 25px">Desarrollador Web Backend</p>
+                        <p style="margin-left: 25px">4 meses de practica</p>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+
               <div id="test1" class="col s12">
                 <div class="card-content">
                   <span class="card-title"><i class="material-icons left drc-text">school</i> Formación academiaca</span>
                   <div class="custom">
+                    <p>&deg; Universidad Tecnológica de la Selva (UTS) Ocosingo Chiapas, Ingeniero en Tecnologiás de la Información. (2017-2019).</p>
+
                     <p>&deg; Universidad Tecnológica de la Selva (UTS) Ocosingo Chiapas, Técnico Superior Universitario en Sistemas informáticos. (2015-2017).</p>
 
                     <p>&deg; Colegio de Estudios Científicos y Tecnológicos del Estado de Chiapas (CECyTECH) Col. Ricardo Flórez Magón Mpio. Venustiano Carranza Chiapas, Área de Soporte y Mantenimiento de hardware y software. (2012-2015).</p>
 
-                    <p>&deg; Escuela Secundaria Técnica N° 35 José Vasconcelos, Las Jarretaderas Nayarit, (2008-2011).</p>
                   </div>
                 </div>
               </div>
@@ -131,18 +166,17 @@
                     <p>&deg; Participación: Torneos regionales, nacionales e internacionales en Vex Robotic’s, 3 Años.</p>
                     <p>&deg; Participación: Concurso Regional de Creatividad e Innovación Tecnológica para alumnos y docentes 2014.</p>
                     <p>&deg; Participación: Desarrollo del sistema “System Chess”, para la fábrica de quesos Santa Rosa (Ocosingo, Chiapas), 4 Meses.</p>
-                    <p>&deg; Constancia de capacitación acelerada especifica en sistemas web, 20 horas.</p>
+                    <p>&deg; Constancia de capacitación acelerada especifica en sistemas web, 40 horas.</p>
                     <p>&deg; Participación: Desarrollo del Proyecto “SEVADE”, Sistema de Entorno Virtual de Aprendizaje Dirigido a la Evaluación (Universidad Tecnológica de la Selva, Ocosingo, Chiapas), 4 Meses.</p>
-                    <p>&deg; Clases: Programación Orientada a Objetos Java, 6 Meses.</p>
-                    <p>&deg; Clases: Programación Orientada a Objetos PHP, 6 Meses.</p>
+                    <p>&deg; Clases: Programación Orientada a Objetos Java, 8 Meses.</p>
+                    <p>&deg; Clases: Programación Orientada a Objetos PHP, 8 Meses.</p>
                     <p>&deg; Clases: Manipulación de bases de datos SQL (MySQL).</p>
-                    <p>&deg; Taller: Programación en Arduino, 15 Horas.</p>
+                    <p>&deg; Taller: Programación en Arduino, 35 Horas.</p>
                     <p>&deg; Taller: Mantenimiento Preventivo y Correctivos de Equipos de Cómputo.</p>
-                    <p>&deg; Curso: Creación y Manipulación de base de datos NoSQL con MongoDB, Java y PHP Orientado a Objetos. 15 Horas.</p>
-                    <p>&deg; Curso: Programación Android, 8 Meses.</p>
-                    <p>&deg; Curso: Uso de Framework para el desarrollo web Font-End y Back-End utilizando JQuery, Uikit, Materialize, Bootstrap, Material Design Lite, Ajax y JavaScript, 5 Meses.</p>
-                    <p>&deg; Prácticas profesionales desarrollando software empresarial, así como su página web en financiera CAPP (Consultores Asociados en Producción Pecuaria), 4 Meses.</p>
-                    <p>&deg; Curso de manipulación e utilización de software para el comercio electronico (PrestaShop), 1 Mes.</p>
+                    <p>&deg; Curso: Creación y Manipulación de base de datos NoSQL con MongoDB, Java y PHP Orientado a Objetos. 40 Horas.</p>
+                    <p>&deg; Curso: Programación Android, 12 Meses.</p>
+                    <p>&deg; Curso: Uso de Framework para el desarrollo web Font-End y Back-End utilizando JQuery, Uikit, Materialize, Bootstrap, Material Design Lite, Ajax y JavaScript, 8 Meses.</p>
+                    <p>&deg; Curso de manipulación e utilización de software para el comercio electronico (PrestaShop), 3 Mes.</p>
                     <p>&deg; Programación de robots para el taller de Electrónica y Robótica de la Universidad Tecnológica de la Selva.</p>
                     <p>&deg; Participación en el desarrollo de software para el ayuntamiento municipal de Ocosingo, Chiapas en el proyecto de "Explora Ocosingo",7 Meses.</p>
                   </div>
@@ -163,7 +197,6 @@
                     <p>&deg; Capacidad de anális.</p>
                     <p>&deg; Innovación y  nuevas tecnologías.</p>
                     <p>&deg; Proactivo.</p>
-                    <p>&deg; Ganas de crecer.</p>
                   </div>
                 </div>
               </div>
@@ -198,6 +231,7 @@
                     <p>&deg; Conocimientos de consola Google Play para publicar aplicaciones.</p>
                     <p>&deg; Uso del hardware del teléfono (cámara, acelerómetro, geo localización).</p>
                     <p>&deg; Responsive Web Design.</p>
+                    <p>&deg; Conocimiento y uso de Flutter con Dart para aplicaciones nativas en plataformas IOS/Android (3 Meses)</p>
                   </div>
                 </div>
               </div>
@@ -208,19 +242,19 @@
                   <span>Pasatiempos</span>
                   <div class="custom">
                     <p>&deg; Escuchar música.</p>
-                    <p>&deg; Leer.</p>
-                    <p>&deg; Jugar video juegos.</p>
-                    <p>&deg; Redes sociales.</p>
+                    <p>&deg; Salir a caminar.</p>
+                    <p>&deg; Ir al cine.</p>
+                    <p>&deg; Video Juegos.</p>
                   </div>
                   <br>
                   <div class="divider"></div>
                   <span>Más sobre mi</span>
                   <div class="custom">
-                    <p>&deg; Posibilidad de cambio de residencia.</p>
                     <p>&deg; Acoplamiento al trabajo en equipo.</p>
                     <p>&deg; Posibilidad de trabajar en línea.</p>
-                    <p>&deg; A punto de concluir los estudios universitarios.</p>
+                    <p>&deg; En proceso de titulación.</p>
                     <p>&deg; Nivel de inglés técnico.</p>
+                    <p>&deg; Ubicicación actual: Col. Juárez CDMX.</p>
                   </div>
                 </div>
               </div>
@@ -319,7 +353,10 @@
       $('.modal').modal();
       $(window).scroll(function(){
           window_y = $(window).scrollTop();
-          scroll_critical = parseInt($("#card_title").height());
+          if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent))
+            scroll_critical = 50;
+          else  
+            scroll_critical = parseInt($("#card_title").height());
           if (window_y > scroll_critical) {
             $("#yo").removeClass("scale-in");
             $("#yo").addClass("scale-out");
