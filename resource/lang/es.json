@@ -1,0 +1,17 @@
+{
+	"header" : {
+		"home" : "Inicio",
+		"contact" : "Contacto",
+		"portfolio" : "Portafolio",
+		"about" : "Acerca de",
+		"skills" : "Habilidades",
+		"lang_es" : "Español",
+		"lang_en" : "Ingles"
+	},
+	"main" : {
+
+	},
+	"footer" : {
+
+	}
+}
